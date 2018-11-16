@@ -3,6 +3,8 @@ package com.soxfmr.jsloader;
 import burp.IBurpExtenderCallbacks;
 import burp.IExtensionHelpers;
 import burp.IIntruderPayloadProcessor;
+import com.soxfmr.jsloader.loader.Loader;
+import com.soxfmr.jsloader.model.PayloadInfo;
 
 import java.util.List;
 
@@ -47,7 +49,7 @@ public class JavaScriptPayloadProcessor implements IIntruderPayloadProcessor {
     }
 
     private String evaluate(String expression, String argument) {
-        return expression.replaceFirst(ARGUMENT_PLACEHOLDER, argument);
+        return expression.replaceAll(ARGUMENT_PLACEHOLDER, argument);
     }
 
 }

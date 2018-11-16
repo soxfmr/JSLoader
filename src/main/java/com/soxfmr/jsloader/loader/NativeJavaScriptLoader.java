@@ -1,4 +1,4 @@
-package com.soxfmr.jsloader;
+package com.soxfmr.jsloader.loader;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;

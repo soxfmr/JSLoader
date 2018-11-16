@@ -1,4 +1,4 @@
-package com.soxfmr.jsloader;
+package com.soxfmr.jsloader.model;
 
 public class PayloadInfo {
 
